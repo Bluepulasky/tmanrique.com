@@ -1,36 +1,28 @@
 .top-nav {
-  max-width: 100%;
-  padding: 30px 10%;
-  background-color: #30302F;
+  padding: 0 48px;
+  height: 90px;
+  background-color: #30302f;
   display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    text-align: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-  width: auto;
-  box-sizing: border-box;
+  width: calc(100% - 96px);
 }
-  
+
 .container_left {
   display: flex;
-  text-align: left;
-  min-width: 0;
-  max-width: 100%;
-}
-
-.container_right{
+  margin-right: auto;
+  height: auto;
+  margin: auto 0;
   display: flex;
-  text-align: right;
-  flex: 1 1 auto;
-  min-width: 0;
-  max-width: 100%;
+  margin-right: auto;
 }
 
-a.container_right{
-  margin-left:12px;
+.container_right {
+  display: flex;
+  margin-right: auto;
+  height: auto;
+  margin: auto 0;
+  display: flex;
+
+  a {
+    margin-left: 24px;
+  }
 }

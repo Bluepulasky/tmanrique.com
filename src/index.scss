@@ -20,4 +20,11 @@ body {
     text-rendering: optimizeLegibility;
 }
 
+a {
+  color: var(--color-link);
+  text-decoration: none;
 
+  &:hover {
+    text-decoration: underline;
+  }
+}
