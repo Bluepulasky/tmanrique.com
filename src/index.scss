@@ -2,9 +2,8 @@
 
 :root {
   --color-background: #FFF;
-  --color-link: yellow;
+  --color-link: #CCC;
   --color-text: black;
-  --color-topnav: #000000a8;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
   font-family: din-2014;
     font-weight: 300;
     font-style: normal;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 25px;
     letter-spacing: .02em;
     text-rendering: optimizeLegibility;
@@ -25,6 +24,6 @@ a {
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    --color-link: #FFF;
   }
 }
