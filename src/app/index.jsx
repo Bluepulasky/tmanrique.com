@@ -1,4 +1,4 @@
-import "./index.css";
+import "./index.scss";
 import { Route } from "react-router-dom";
 import Home from "../home";
 import TopNav from "../top-nav";
