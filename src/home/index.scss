@@ -1,0 +1,40 @@
+.image-container {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  img {
+    height: auto;
+    width: 100vw;
+    margin: auto;
+  }
+}
+
+.image-container-split {
+  width: 100%;
+  height: auto;
+  max-height: 100vh;
+  overflow: auto;
+  justify-content: center;
+  display: flex;
+
+  .image-container {
+    width: 50%;
+  }
+}
+
+.description-container {
+  min-height: 80vh;
+  width: 100%;
+  background-color: var(--color-background);
+  display: flex;
+
+  .description {
+    margin: auto;
+    max-width: 800px;
+  }
+}

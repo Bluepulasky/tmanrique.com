@@ -1,0 +1,12 @@
+.top-nav {
+  position: fixed;
+  background-color: var(--color-topnav);
+  width: calc(100% - 32px);
+  height: 64px;
+  display: flex;
+  padding: 0 16px;
+
+  .title {
+
+  }
+}
