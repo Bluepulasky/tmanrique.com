@@ -1,0 +1,33 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  overflow: hidden;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+
+  img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    transition: 400ms cubic-bezier(.33,0,.2,1);
+  }
+
+  &:hover {
+    img{
+      filter: brightness(85%) saturate(90%) contrast(120%);
+    }
+  }
+}
+
+.title-container {
+  display: flex;
+  height: auto;
+  color: white;
+  font-size:25px;
+  position: absolute;
+  padding-left: 10%;
+  bottom: 6vh;
+}

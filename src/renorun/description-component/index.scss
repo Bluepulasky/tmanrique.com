@@ -1,0 +1,12 @@
+.description-container {
+  min-height: 80vh;
+  width: 100%;
+  background-color: var(--color-background);
+  font-size: 18px;
+  display: flex;
+
+  .description {
+    margin: auto;
+    max-width: 50vw;
+  }
+}
