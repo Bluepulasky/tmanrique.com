@@ -11,6 +11,13 @@
     height: auto;
     width: 100vw;
     margin: auto;
+    transition: 400ms cubic-bezier(.33,0,.2,1);
+  }
+
+  &:hover {
+    img{
+      filter: brightness(85%);
+    }
   }
 }
 

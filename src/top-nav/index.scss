@@ -24,7 +24,7 @@
 
   a {
     margin-left: 24px;
-    transition: all 0.5s;
+    transition: all 400ms cubic-bezier(.33,0,.2,1);
 
     &.selected {
       color: white;
