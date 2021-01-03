@@ -1,5 +1,8 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./index.scss";
+
+// https://www.npmjs.com/package/prop-types
 
 import livingImage from "../assets/images/living.png";
 import kitchenImage from "../assets/images/kitchen.png";
@@ -17,6 +20,11 @@ function ImageComponent(props) {
   );
 }
 
+ImageComponent.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+};
+
 function ImageComponentSplit(props) {
   const { imageLeft, imageRight, titleLeft, titleRight } = props;
 
@@ -28,6 +36,13 @@ function ImageComponentSplit(props) {
   );
 }
 
+ImageComponentSplit.propTypes = {
+  imageLeft: PropTypes.string,
+  imageRight: PropTypes.string,
+  titleLeft: PropTypes.string,
+  titleRight: PropTypes.string,
+};
+
 function DescriptionComponent(props) {
   const { children } = props;
 
@@ -37,6 +52,10 @@ function DescriptionComponent(props) {
     </div>
   );
 }
+
+DescriptionComponent.propTypes = {
+  children: PropTypes.element,
+};
 
 export default function Home() {
   return (

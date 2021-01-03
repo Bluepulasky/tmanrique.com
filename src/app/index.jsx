@@ -1,3 +1,5 @@
+import React from "react";
+
 import "./index.scss";
 import { Route } from "react-router-dom";
 import Home from "../home";
@@ -7,7 +9,10 @@ import Footer from "../footer";
 function App() {
   return (
     <div className="wrapper">
-      <TopNav /><Route exact path="/"><Home /></Route>
+      <TopNav />
+      <Route exact path="/">
+        <Home />
+      </Route>
       <Footer />
     </div>
   );
