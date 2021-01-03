@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import "./index.scss";
 
 export default function ImageComponent(props) {
-  const { image, title } = props;
+  const { image, title, linktarget } = props;
 
   return (
     <div className="image-container">
-      <img src={image} alt="" />
+      <a href={linktarget}><img src={image} alt="" /></a>
       <div className="title-container">{title}</div>
     </div>
   );
@@ -16,4 +16,5 @@ export default function ImageComponent(props) {
 ImageComponent.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
+  linktarget: PropTypes.string,
 };

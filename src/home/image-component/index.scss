@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 100vh;
+  max-height: 80vh;
   overflow: hidden;
   justify-content: center;
   flex-direction: column;
@@ -17,7 +17,7 @@
 
   &:hover {
     img{
-      filter: brightness(90%) saturate(90%) contrast(120%);
+      filter: brightness(85%) saturate(90%) contrast(120%);
     }
   }
 }
@@ -29,5 +29,5 @@
   font-size:25px;
   position: absolute;
   padding-left: 10%;
-  bottom: 32px;
+  bottom: 6vh;
 }

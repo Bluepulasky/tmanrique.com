@@ -1,12 +1,12 @@
 .top-nav {
   padding: 0 48px;
-  height: 140px;
+  height: 120px;
   background-color: #30302f;
   display: flex;
   width: calc(100% - 96px);
 }
 
-.container_left {
+.top-nav-container_left {
   display: flex;
   margin-right: auto;
   height: auto;
@@ -15,7 +15,7 @@
   margin-right: auto;
 }
 
-.container_right {
+.top-nav-container_right {
   display: flex;
   margin-right: auto;
   height: auto;

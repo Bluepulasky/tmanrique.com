@@ -7,10 +7,10 @@ export default function TopNav() {
 
   return (
     <div className="top-nav">
-      <div className="container_left">
+      <div className="top-nav-container_left">
         <Link to="/">Tomas Manrique</Link>
       </div>
-      <div className="container_right">
+      <div className="top-nav-container_right">
         <Link className={location.pathname === "/" ? "selected" : ""} to="/">
           Work
         </Link>
