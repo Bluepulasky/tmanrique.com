@@ -1,9 +1,9 @@
 import React from "react";
 import "./index.scss";
 
-import instagramSvg from "../assets/svgs/instagram.svg";
-import upwkSvg from "../assets/svgs/upwork.svg";
-import behanceSvg from "../assets/svgs/behance.svg";
+import instagramSvg from "../../assets/svgs/instagram.svg";
+import upwkSvg from "../../assets/svgs/upwork.svg";
+import behanceSvg from "../../assets/svgs/behance.svg";
 
 export default function Footer() {
   return (

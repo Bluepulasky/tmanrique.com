@@ -4,8 +4,8 @@ import "./index.scss";
 import { Route, useLocation } from "react-router-dom";
 import Home from "../home";
 import RenoRun from "../renorun";
-import TopNav from "../top-nav";
-import Footer from "../footer";
+import TopNav from "../components/top-nav";
+import Footer from "../components/footer";
 
 function App() {
   const location = useLocation();

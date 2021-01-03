@@ -6,8 +6,8 @@ no-split: imagenes: 2540x1200 safe(2540x1050px) / split: 1500x1920px (safe 1500x
 import livingImage from "../assets/images/living.jpg";
 import kitchenImage from "../assets/images/kitchen.jpg";
 import windowImage from "../assets/images/window.jpg";
-import ImageComponent from "./image-component";
-import ImageComponentSplit from "./image-component-split";
+import ImageComponent from "../components/image-component";
+import ImageComponentSplit from "../components/image-component-split";
 /*import DescriptionComponent from "./description-component";*/
 
 export default function Home() {

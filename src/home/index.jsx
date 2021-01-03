@@ -9,8 +9,8 @@ import windowImage from "../assets/images/window.jpg";
 import mustardImage from "../assets/images/mustard.jpg";
 import sundialImage from "../assets/images/bottle.jpg";
 import whiskyImage from "../assets/images/whiskybottle.jpg";
-import ImageComponent from "./image-component";
-import ImageComponentSplit from "./image-component-split";
+import ImageComponent from "../components/image-component";
+import ImageComponentSplit from "../components/image-component-split";
 /*import DescriptionComponent from "./description-component";*/
 
 export default function Home() {
