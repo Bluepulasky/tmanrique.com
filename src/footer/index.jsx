@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
+import instagramSvg from "../assets/svgs/instagram.svg";
+
 export default function Footer() {
   return (
     <div className="footer" id="footer">
@@ -20,7 +22,7 @@ export default function Footer() {
       </div>
       <div className="footer-container_right">
         <Link to="https://www.instagram.com/tomanrique/">
-          <img src="./assets/svgs/instagram.svg" alt=""></img>
+          <img src={instagramSvg} alt=""></img>
         </Link>
         <Link to="/contact">Contact</Link>
       </div>
