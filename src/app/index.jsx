@@ -13,6 +13,8 @@ function App() {
       <TopNav />
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/renorun">
         <RenoRun />
       </Route>
       <Footer />
