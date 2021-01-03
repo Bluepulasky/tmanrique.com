@@ -7,7 +7,9 @@ export default function ImageComponent(props) {
 
   return (
     <div className="image-container">
-      <a href={linktarget}><img src={image} alt="" /></a>
+      <a href={linktarget}>
+        <img src={image} alt="" />
+      </a>
       <div className="title-container">{title}</div>
     </div>
   );

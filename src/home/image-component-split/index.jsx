@@ -4,7 +4,7 @@ import "./index.scss";
 import ImageComponent from "../image-component";
 
 export default function ImageComponentSplit(props) {
-  const { imageLeft, imageRight, titleLeft, titleRight} = props;
+  const { imageLeft, imageRight, titleLeft, titleRight } = props;
 
   return (
     <div className="image-container-split">
