@@ -24,8 +24,10 @@ export default function Home() {
       <ImageComponentSplit
         imageLeft={kitchenImage}
         titleLeft="Pink Kitchen"
+        linkLeft=""
         imageRight={windowImage}
         titleRight="Modern Living Room"
+        linkRight=""
       />
       <ImageComponent
         image={mustardImage}

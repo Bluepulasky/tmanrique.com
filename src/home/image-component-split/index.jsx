@@ -4,12 +4,27 @@ import "./index.scss";
 import ImageComponent from "../image-component";
 
 export default function ImageComponentSplit(props) {
-  const { imageLeft, imageRight, titleLeft, titleRight } = props;
+  const {
+    imageLeft,
+    imageRight,
+    titleLeft,
+    titleRight,
+    linkLeft,
+    linkRight,
+  } = props;
 
   return (
     <div className="image-container-split">
-      <ImageComponent image={imageLeft} title={titleLeft} />
-      <ImageComponent image={imageRight} title={titleRight} />
+      <ImageComponent
+        linktarget={linkLeft}
+        image={imageLeft}
+        title={titleLeft}
+      />
+      <ImageComponent
+        linktarget={linkRight}
+        image={imageRight}
+        title={titleRight}
+      />
     </div>
   );
 }
@@ -19,4 +34,6 @@ ImageComponentSplit.propTypes = {
   imageRight: PropTypes.string,
   titleLeft: PropTypes.string,
   titleRight: PropTypes.string,
+  linkLeft: PropTypes.string,
+  linkRight: PropTypes.string,
 };
