@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import "./index.scss";
 
 export default function ImageComponent(props) {
@@ -7,9 +8,9 @@ export default function ImageComponent(props) {
 
   return (
     <div className="image-container">
-      <a href={linktarget}>
+      <Link to={linktarget}>
         <img src={image} alt="" />
-      </a>
+      </Link>
       <div className="title-container">{title}</div>
     </div>
   );
