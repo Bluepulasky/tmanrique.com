@@ -4,7 +4,7 @@ import "./index.scss";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-container_left">
         <p>Get in touch<br/>
         <Link to="https://wa.me/34651157140">+34 651 157 140</Link><br/>
