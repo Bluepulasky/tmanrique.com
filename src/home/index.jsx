@@ -50,7 +50,7 @@ export default function Home() {
       />
       <ImageComponent image={mustardImage} title="Heinz Mustard" />
       <DescriptionComponent>
-        <pr>
+        <p>
           <b>Client:</b>
           <b>Brief</b>: We were appointed by London-based design agency Here to
           produce 3D computer generated images for their luxury rebrand of the
@@ -78,7 +78,7 @@ export default function Home() {
           modernised bottle profile, V-shaped engraving and redesigned label.
           <b>Services</b>: Product Visualisation
           <b>Software</b>: Blender v2.9 + Adobe Photoshop
-        </pr>
+        </p>
       </DescriptionComponent>
       <ImageComponent image={mustardImage} />
     </>

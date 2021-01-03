@@ -7,10 +7,7 @@ import Footer from "../footer";
 function App() {
   return (
     <div className="wrapper">
-      <TopNav />
-      <Route exact path="/">
-        <Home />
-      </Route>
+      <TopNav /><Route exact path="/"><Home /></Route>
       <Footer />
     </div>
   );
