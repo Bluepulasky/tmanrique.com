@@ -1,4 +1,5 @@
 .image-container {
+  position: relative;
   width: 100%;
   height: auto;
   max-height: 100vh;
@@ -26,18 +27,9 @@
   height: auto;
   color: white;
   font-size:25px;
-  position: relative;
+  position: absolute;
   padding-left: 10%;
-  top: -150px;
-}
-
-.title-container-split {
-  display: flex;
-  width: 0;
-  position: relative;
-  left: -40%;
-  color: red;
-  font-size:25px;
+  bottom: 32px;
 }
 
 .image-container-split {

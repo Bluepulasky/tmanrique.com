@@ -22,26 +22,32 @@ function ImageComponentSplit(props) {
 
   return (
     <div className="image-container-split">
-      <ImageComponent image={imageLeft} />
-      <div className="title-container-split">{titleLeft}</div>
-      <ImageComponent image={imageRight} />
-      <div className="title-container-split">{titleRight}</div>
+      <ImageComponent image={imageLeft} title={titleLeft} />
+      <ImageComponent image={imageRight} title={titleRight} />
     </div>
   );
 }
 
-
 function DescriptionComponent(props) {
   const { children } = props;
 
-  return <div className="description-container"><div className="description">{children}</div></div>;
+  return (
+    <div className="description-container">
+      <div className="description">{children}</div>
+    </div>
+  );
 }
 
 export default function Home() {
   return (
     <>
       <ImageComponent image={livingImage} title="The Living Room" />
-      <ImageComponentSplit imageLeft={kitchenImage} titleLeft="Pink Kitchen" imageRight={windowImage} titleRight="Modern Living Room"/>
+      <ImageComponentSplit
+        imageLeft={kitchenImage}
+        titleLeft="Pink Kitchen"
+        imageRight={windowImage}
+        titleRight="Modern Living Room"
+      />
       <ImageComponent image={mustardImage} title="Heinz Mustard" />
       <DescriptionComponent>
         <pr>
