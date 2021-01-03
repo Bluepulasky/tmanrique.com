@@ -19,6 +19,7 @@
   &:hover {
     .image {
       filter: brightness(85%) saturate(90%) contrast(120%);
+      cursor: pointer;
     }
   }
 }
