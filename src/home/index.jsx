@@ -1,61 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
-import "./index.scss";
-
-// https://www.npmjs.com/package/prop-types
 
 import livingImage from "../assets/images/living.png";
 import kitchenImage from "../assets/images/kitchen.png";
 import windowImage from "../assets/images/window.png";
 import mustardImage from "../assets/images/mustard.png";
-
-function ImageComponent(props) {
-  const { image, title } = props;
-
-  return (
-    <div className="image-container">
-      <img src={image} alt="" />
-      <div className="title-container">{title}</div>
-    </div>
-  );
-}
-
-ImageComponent.propTypes = {
-  image: PropTypes.string,
-  title: PropTypes.string,
-};
-
-function ImageComponentSplit(props) {
-  const { imageLeft, imageRight, titleLeft, titleRight } = props;
-
-  return (
-    <div className="image-container-split">
-      <ImageComponent image={imageLeft} title={titleLeft} />
-      <ImageComponent image={imageRight} title={titleRight} />
-    </div>
-  );
-}
-
-ImageComponentSplit.propTypes = {
-  imageLeft: PropTypes.string,
-  imageRight: PropTypes.string,
-  titleLeft: PropTypes.string,
-  titleRight: PropTypes.string,
-};
-
-function DescriptionComponent(props) {
-  const { children } = props;
-
-  return (
-    <div className="description-container">
-      <div className="description">{children}</div>
-    </div>
-  );
-}
-
-DescriptionComponent.propTypes = {
-  children: PropTypes.element,
-};
+import ImageComponent from "./image-component";
+import ImageComponentSplit from "./image-component-split";
+import DescriptionComponent from "./description-component";
 
 export default function Home() {
   return (
