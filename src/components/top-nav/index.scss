@@ -1,9 +1,13 @@
 .top-nav {
   padding: 0 48px;
   height: 120px;
-  background-color: #30302f;
+  background-color: #30302fde;
   display: flex;
+  position: fixed;
   width: calc(100% - 96px);
+  z-index: 10;
+  top: 0px;
+  transition: all 0.5s;
 }
 
 .top-nav-container_left {

@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./index.scss";
 
 export default function TopNav() {
+  const [showTopNav, setShowTopNav] = useState(true);
+
   const location = useLocation();
 
+  useEffect(() => {
+    window.onscroll = () => {
+      if (window.scrollY < 64) {
+        setShowTopNav(false);
+      } else {
+        setShowTopNav(true);
+      }
+    };
+  }, []);
+
   return (
-    <div className="top-nav">
+    <div
+      className="top-nav"
+      style={showTopNav ? { height: "48px" } : { height: "120px" }}
+    >
       <div className="top-nav-container_left">
         <Link to="/">Tomas Manrique</Link>
       </div>
