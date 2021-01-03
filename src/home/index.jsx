@@ -1,12 +1,17 @@
 import React from "react";
 
-import livingImage from "../assets/images/living.png";
-import kitchenImage from "../assets/images/kitchen.png";
-import windowImage from "../assets/images/window.png";
-import mustardImage from "../assets/images/mustard.png";
+/*
+no-split: imagenes: 2540x1200 safe(2540x1050px) / split: 1500x1920px (safe 1500x1334px)
+*/
+import livingImage from "../assets/images/living.jpg";
+import kitchenImage from "../assets/images/kitchen.jpg";
+import windowImage from "../assets/images/window.jpg";
+import mustardImage from "../assets/images/mustard.jpg";
+import sundialImage from "../assets/images/bottle.jpg";
+import whiskyImage from "../assets/images/whiskybottle.jpg"
 import ImageComponent from "./image-component";
 import ImageComponentSplit from "./image-component-split";
-import DescriptionComponent from "./description-component";
+/*import DescriptionComponent from "./description-component";*/
 
 export default function Home() {
   return (
@@ -23,6 +28,17 @@ export default function Home() {
         titleRight="Modern Living Room"
       />
       <ImageComponent image={mustardImage} title="Heinz Mustard" />
+      <ImageComponentSplit
+        imageLeft={sundialImage}
+        titleLeft="Sundial AI"
+        imageRight={whiskyImage}
+        titleRight="Whisky Bottle"
+      />
+    </>
+  );
+}
+
+/*
       <DescriptionComponent>
         <p>
           <b>Client:</b>
@@ -60,7 +76,4 @@ export default function Home() {
           <br />
         </p>
       </DescriptionComponent>
-      <ImageComponent image={mustardImage} />
-    </>
-  );
-}
+*/
