@@ -3,6 +3,7 @@ import React from "react";
 import "./index.scss";
 import { Route } from "react-router-dom";
 import Home from "../home";
+import RenoRun from "../renorun";
 import TopNav from "../top-nav";
 import Footer from "../footer";
 
@@ -12,6 +13,7 @@ function App() {
       <TopNav />
       <Route exact path="/">
         <Home />
+        <RenoRun />
       </Route>
       <Footer />
     </div>
