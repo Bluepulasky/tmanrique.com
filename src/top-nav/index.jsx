@@ -14,12 +14,7 @@ export default function TopNav() {
         <Link className={location.pathname === "/" ? "selected" : ""} to="/">
           Work
         </Link>
-        <Link
-          className={location.pathname === "/contact" ? "selected" : ""}
-          to="/contact"
-        >
-          Contact
-        </Link>
+        <a href="/#footer">Contact</a>
       </div>
     </div>
   );
