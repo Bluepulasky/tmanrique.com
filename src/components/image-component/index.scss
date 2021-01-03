@@ -22,6 +22,7 @@
 }
 
 .title-container {
+  pointer-events: none;
   display: flex;
   height: auto;
   color: white;
