@@ -7,25 +7,29 @@ import windowImage from "../assets/images/window.png";
 import mustardImage from "../assets/images/mustard.png";
 
 function ImageComponent(props) {
-  const { image } = props;
+  const { image, title } = props;
 
   return (
     <div className="image-container">
       <img src={image} alt="" />
+      <div className="title-container">{title}</div>
     </div>
   );
 }
 
 function ImageComponentSplit(props) {
-  const { imageLeft, imageRight } = props;
+  const { imageLeft, imageRight, titleLeft, titleRight } = props;
 
   return (
     <div className="image-container-split">
       <ImageComponent image={imageLeft} />
+      <div className="title-container-split">{titleLeft}</div>
       <ImageComponent image={imageRight} />
+      <div className="title-container-split">{titleRight}</div>
     </div>
   );
 }
+
 
 function DescriptionComponent(props) {
   const { children } = props;
@@ -36,9 +40,9 @@ function DescriptionComponent(props) {
 export default function Home() {
   return (
     <>
-      <ImageComponent image={livingImage} />
-      <ImageComponentSplit imageLeft={kitchenImage} imageRight={windowImage} />
-      <ImageComponent image={mustardImage} />
+      <ImageComponent image={livingImage} title="The Living Room" />
+      <ImageComponentSplit imageLeft={kitchenImage} titleLeft="Pink Kitchen" imageRight={windowImage} titleRight="Modern Living Room"/>
+      <ImageComponent image={mustardImage} title="Heinz Mustard" />
       <DescriptionComponent>
         <pr>
           <b>Client:</b>

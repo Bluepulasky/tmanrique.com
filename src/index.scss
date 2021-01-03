@@ -2,7 +2,7 @@
 
 :root {
   --color-background: #FFF;
-  --color-link: #CCC;
+  --color-link: #BBB;
   --color-text: black;
 }
 
@@ -22,8 +22,9 @@ body {
 a {
   color: var(--color-link);
   text-decoration: none;
+  transition: all 0.5s;
 
   &:hover {
-    --color-link: #FFF;
+    color: #FFF;
   }
 }

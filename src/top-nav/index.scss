@@ -1,6 +1,6 @@
 .top-nav {
   padding: 0 48px;
-  height: 120px;
+  height: 140px;
   background-color: #30302f;
   display: flex;
   width: calc(100% - 96px);
@@ -10,7 +10,7 @@
   display: flex;
   margin-right: auto;
   height: auto;
-  margin: auto 10%;
+  margin: auto 10vw;
   display: flex;
   margin-right: auto;
 }
@@ -19,14 +19,15 @@
   display: flex;
   margin-right: auto;
   height: auto;
-  margin: auto 10%;
+  margin: auto 10vw;
   display: flex;
 
   a {
     margin-left: 24px;
+    transition: all 0.5s;
 
     &.selected {
-      color: red;
+      color: white;
     }
   }
 }
