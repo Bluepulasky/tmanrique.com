@@ -36,9 +36,11 @@ export default function Home() {
       />
       <ImageComponentSplit
         imageLeft={sundialImage}
+        linkLeft=""
         titleLeft="Sundial AI"
         imageRight={whiskyImage}
         titleRight="Whisky Bottle"
+        linkRight=""
       />
     </>
   );
