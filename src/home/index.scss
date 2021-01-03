@@ -16,7 +16,7 @@
 
   &:hover {
     img{
-      filter: brightness(85%);
+      filter: brightness(85%) saturate(80%);
     }
   }
 }
