@@ -9,7 +9,7 @@ export default function TopNav() {
 
   useEffect(() => {
     window.onscroll = () => {
-      if (window.scrollY < 64) {
+      if (window.scrollY < 500) {
         setShowTopNav(false);
       } else {
         setShowTopNav(true);

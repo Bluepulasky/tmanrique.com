@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.scss";
 
 /*
 no-split: imagenes: 2540x1200 safe(2540x1050px) / split: 1500x1920px (safe 1500x1334px)
@@ -16,6 +17,7 @@ import ImageComponentSplit from "../components/image-component-split";
 export default function Home() {
   return (
     <>
+      <div className="behind-top-nav"></div>
       <ImageComponent
         image={livingImage}
         title="The Living Room"
