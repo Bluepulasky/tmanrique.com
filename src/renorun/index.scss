@@ -1,0 +1,22 @@
+.behind-top-nav {
+  height: 6vw;
+  background-color: #30302f;
+}
+
+@media (min-width: 1599px) {
+.behind-top-nav {
+height: 3.5vw;
+}
+}
+
+@media (min-width: 1799px) {
+  .behind-top-nav {
+  height: 2vw;
+  }
+  }
+
+@media (min-width: 1921px) {
+  .behind-top-nav {
+  height: 0.5vw;
+  }
+  }

@@ -1,0 +1,14 @@
+.image-single-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  background-color: #30302f;
+  padding: 10vh 0;
+
+  img {
+    height: auto;
+    width: 75%;
+  }
+}

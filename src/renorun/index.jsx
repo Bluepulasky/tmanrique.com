@@ -1,34 +1,18 @@
 import React from "react";
+import "./index.scss";
 
 /*
 no-split: imagenes: 2540x1200 safe(2540x1050px) / split: 1500x1920px (safe 1500x1334px)
 */
 import livingImage from "../assets/images/living.jpg";
-import kitchenImage from "../assets/images/kitchen.jpg";
-import windowImage from "../assets/images/window.jpg";
-import ImageComponent from "../components/image-component";
-import ImageComponentSplit from "../components/image-component-split";
-/*import DescriptionComponent from "./description-component";*/
+import ImageSingleComponent from "../components/image-single-component";
+import DescriptionComponent from "../components/description-component";
 
-export default function Home() {
+export default function RenoRun() {
   return (
     <>
-      <ImageComponent
-        image={livingImage}
-        title="The Living Room"
-        linktarget="/contact"
-      />
-      <ImageComponentSplit
-        imageLeft={kitchenImage}
-        titleLeft="Pink Kitchen"
-        imageRight={windowImage}
-        titleRight="Modern Living Room"
-      />
-    </>
-  );
-}
-
-/*
+      <div className="behind-top-nav"></div>
+      <ImageSingleComponent image={livingImage} />
       <DescriptionComponent>
         <p>
           <b>Client:</b>
@@ -66,4 +50,6 @@ export default function Home() {
           <br />
         </p>
       </DescriptionComponent>
-*/
+    </>
+  );
+}
