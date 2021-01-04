@@ -10,6 +10,7 @@ import windowImage from "../assets/images/window.jpg";
 import mustardImage from "../assets/images/mustard.jpg";
 import sundialImage from "../assets/images/bottle.jpg";
 import whiskyImage from "../assets/images/whiskybottle.jpg";
+import manijaImage from "../assets/images/manija.jpg";
 import ImageComponent from "../components/image-component";
 import ImageComponentSplit from "../components/image-component-split";
 /*import DescriptionComponent from "./description-component";*/
@@ -21,7 +22,7 @@ export default function Home() {
       <ImageComponent
         image={livingImage}
         title="The Living Room"
-        linktarget="/contact"
+        linktarget=""
       />
       <ImageComponentSplit
         imageLeft={kitchenImage}
@@ -34,7 +35,7 @@ export default function Home() {
       <ImageComponent
         image={mustardImage}
         title="Heinz Mustard"
-        linktarget="/renorun"
+        linktarget=""
       />
       <ImageComponentSplit
         imageLeft={sundialImage}
@@ -43,6 +44,11 @@ export default function Home() {
         imageRight={whiskyImage}
         titleRight="Whisky Bottle"
         linkRight=""
+      />
+      <ImageComponent
+        image={manijaImage}
+        title="RenoRun"
+        linktarget="/renorun"
       />
     </>
   );

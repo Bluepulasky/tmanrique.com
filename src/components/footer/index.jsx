@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./index.scss";
 
 import instagramSvg from "../../assets/svgs/instagram.svg";
 import upwkSvg from "../../assets/svgs/upwork.svg";
 import behanceSvg from "../../assets/svgs/behance.svg";
+import useScrollOnHash from "../../hooks/useScrollOnHash";
 
 export default function Footer() {
+  const divRef = useRef(null);
+  useScrollOnHash(divRef, "footer");
+
   return (
-    <div className="footer" id="footer">
+    <div className="footer" ref={divRef}>
       <div className="footer-container_left">
         <p>
           Get in touch

@@ -11,6 +11,6 @@ export default function useScrollOnHash(ref, id) {
       if (location.hash == "#" + id.replace(/\s+/g, "-").toLowerCase()) {
         scrollToRef(ref);
       }
-    }, 500);
+    }, 0);
   }, [id, ref, location]);
 }
