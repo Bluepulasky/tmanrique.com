@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./index.scss";
 
 export default function TopNav() {
-  const [showTopNav, setShowTopNav] = useState(true);
+  const [showTopNav, setShowTopNav] = useState(false);
 
   const location = useLocation();
 
