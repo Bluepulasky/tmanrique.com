@@ -6,8 +6,6 @@ export default function TopNav() {
   const [showTopNav, setShowTopNav] = useState(false);
 
   const location = useLocation();
-  const scrollToRef = (linkref) =>
-    window.scrollTo(0, linkref.current.offsetTop);
 
   useEffect(() => {
     window.onscroll = () => {
@@ -18,14 +16,6 @@ export default function TopNav() {
       }
     };
   }, []);
-
-  useEffect(() => {
-    setTimeout(() => {
-      if (location.hash == "#" + id) {
-        scrollToRef();
-      }
-    }, 500);
-  }, [id, linkRef, location]);
 
   return (
     <div
@@ -39,7 +29,7 @@ export default function TopNav() {
         <Link className={location.pathname === "/" ? "selected" : ""} to="/">
           Work
         </Link>
-        <Link to={scrollToRef("#footer")}>Contact</Link>
+        <Link to={"#footer"}>Contact</Link>
       </div>
     </div>
   );
