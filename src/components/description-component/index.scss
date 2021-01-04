@@ -3,9 +3,18 @@
   background-color: var(--color-background);
   font-size: 18px;
   display: flex;
+  min-height: 75vh;
 
   .description {
+    display: flex;
+    height: 100%;
     margin: 10vh auto;
     max-width: 40vw;
+    justify-content: center;
   }
+}
+
+.divisor{
+  height: 7vh;
+  background-color:#30302f;
 }
