@@ -21,8 +21,8 @@ export default function Home() {
       <div className="behind-top-nav-home"></div>
       <ImageComponent
         image={livingImage}
-        title="The Living Room"
-        linktarget=""
+        title="Furniture Showcase"
+        linktarget="/furniture"
       />
       <ImageComponentSplit
         imageLeft={kitchenImage}
