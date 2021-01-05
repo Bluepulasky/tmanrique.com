@@ -4,11 +4,11 @@ import "./index.scss";
 /*
 no-split: imagenes: 2540x1200 safe(2540x1050px) / split: 1500x1920px (safe 1500x1334px)
 */
-import manijaImage from "../assets/images/renorun/reno-manija.jpg";
-import aislanteImage from "../assets/images/renorun/reno-aislante.jpg";
-import alambreImage from "../assets/images/renorun/reno-alambre.jpg";
-import alfombragomaImage from "../assets/images/renorun/reno-alfombragoma.jpg";
-import galvanizadoImage from "../assets/images/renorun/reno-galvanizado.jpg";
+import manijaImage from "../assets/images/renorun/reno-manija.webp";
+import aislanteImage from "../assets/images/renorun/reno-aislante.webp";
+import alambreImage from "../assets/images/renorun/reno-alambre.webp";
+import alfombragomaImage from "../assets/images/renorun/reno-alfombragoma.webp";
+import galvanizadoImage from "../assets/images/renorun/reno-galvanizado.webp";
 import ImageSingleComponent from "../components/image-single-component";
 import DescriptionComponent from "../components/description-component";
 
