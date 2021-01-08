@@ -7,6 +7,7 @@ import RenoRun from "../renorun";
 import Furniture from "../furniture";
 import TopNav from "../components/top-nav";
 import Footer from "../components/footer";
+import Model from "../components/model";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,9 @@ function App() {
       <TopNav />
       <Route exact path="/">
         <Home />
+      </Route>
+      <Route exact path="/model">
+        <Model model="./models/barcelona-chair.glb" />
       </Route>
       <Route exact path="/furniture">
         <Furniture />
