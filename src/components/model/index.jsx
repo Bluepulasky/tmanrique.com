@@ -24,10 +24,22 @@ export default function Model(props) {
       // const gridHelper = new THREE.GridHelper(10, 20);
       // scene.add(gridHelper);
 
-      // 0xddf6ff = hex de la luz
-      const light = new THREE.PointLight(0xddf6ff, 5, 150);
-      light.position.set(-5, 5, -5);
-      scene.add(light);
+      let pointlight = new THREE.AmbientLight(0x333333);
+      let ambientLight = new THREE.DirectionalLight(0xffffff, 2.0);
+      scene.add(pointlight);
+      scene.add(ambientLight);
+
+/*      let stainless_steel = new THREE.MeshPhysicalMaterial({
+        map: null,
+        color: 0xeeeeee,
+        metalness: 1,
+        roughness: 0.3,
+        opacity: 1,
+        side: THREE.BackSide,
+        transparent: false,
+        // TODO: Add custom blend mode that modulates background color by this materials color.
+      });
+*/
 
       // https://threejs.org/docs/#examples/en/controls/OrbitControls
       const controls = new OrbitControls(camera, renderer.domElement);
@@ -52,6 +64,7 @@ export default function Model(props) {
           loadedModel.scene.translateY(-0.25);
           scene.add(loadedModel.scene);
           render();
+          // aca va una funcion para modificar el material del mesh "estructura", material "Clean Stainless" a stainless_steel definido en linea 32
         },
         console.log, // aca va una funcion para actualizar un loader
         console.error
