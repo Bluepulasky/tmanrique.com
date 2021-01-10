@@ -24,22 +24,38 @@ export default function Model(props) {
       // const gridHelper = new THREE.GridHelper(10, 20);
       // scene.add(gridHelper);
 
-      let pointlight = new THREE.AmbientLight(0x333333);
-      let ambientLight = new THREE.DirectionalLight(0xffffff, 2.0);
-      scene.add(pointlight);
-      scene.add(ambientLight);
+      //lights
 
-/*      let stainless_steel = new THREE.MeshPhysicalMaterial({
+      scene.add(new THREE.AmbientLight(0x666666));
+
+      const light = new THREE.DirectionalLight(0xdfebff, 1);
+      light.position.set(50, 200, 100);
+      light.position.multiplyScalar(1.3);
+
+      light.castShadow = true;
+
+      light.shadow.mapSize.width = 1024;
+      light.shadow.mapSize.height = 1024;
+
+      const d = 300;
+
+      light.shadow.camera.left = -d;
+      light.shadow.camera.right = d;
+      light.shadow.camera.top = d;
+      light.shadow.camera.bottom = -d;
+
+      light.shadow.camera.far = 1000;
+
+      scene.add(light);
+
+      /*let stainless_steel = new THREE.MeshPhysicalMaterial({
         map: null,
-        color: 0xeeeeee,
-        metalness: 1,
+        color: 0xff00000,
+        metalness: 0,
         roughness: 0.3,
         opacity: 1,
-        side: THREE.BackSide,
         transparent: false,
-        // TODO: Add custom blend mode that modulates background color by this materials color.
-      });
-*/
+      });*/
 
       // https://threejs.org/docs/#examples/en/controls/OrbitControls
       const controls = new OrbitControls(camera, renderer.domElement);
@@ -57,6 +73,7 @@ export default function Model(props) {
       }
 
       const loader = new GLTFLoader();
+
       loader.load(
         model,
         function (loadedModel) {
@@ -65,6 +82,7 @@ export default function Model(props) {
           scene.add(loadedModel.scene);
           render();
           // aca va una funcion para modificar el material del mesh "estructura", material "Clean Stainless" a stainless_steel definido en linea 32
+          // chair = new THREE.Mesh(chair.Mesh, stainless_steel); la idea es esta pero hay que definir "chair"
         },
         console.log, // aca va una funcion para actualizar un loader
         console.error
